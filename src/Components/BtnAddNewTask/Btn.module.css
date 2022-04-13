@@ -1,0 +1,21 @@
+.header {
+  background-color: #46e1b5;
+  width: 100%;
+  position: absolute;
+  height: 120px;
+  top: 0;
+  right: 0;
+}
+
+.btn {
+  display: block;
+  margin-left: 90%;
+  margin-top: 15px;
+  padding: 5px 10px;
+  border-radius: 1px;
+  width: 80px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #46e1b5;
+}

@@ -1,0 +1,13 @@
+.section {
+  display: flex;
+
+  /*  */
+  margin: auto;
+  width: 80%;
+  margin-top: 60px;
+  text-align: center;
+  justify-content: space-around;
+  grid-auto-rows: auto;
+  position: relative;
+  z-index: 1;
+}
