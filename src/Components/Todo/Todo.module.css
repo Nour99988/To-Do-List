@@ -9,15 +9,40 @@
   font-size: 25px;
 }
 
+@media (max-width: 575.98px) {
+  .contener {
+    width: 25%;
+  }
+  .contener h3 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
 .content {
   padding: 5px 25px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
-.content .task {
+.task {
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: relative;
+  line-break: anywhere;
+}
+
+.task:not(:last-child) {
+  border-bottom: 1px solid #46e1b5;
 }
 
 .content .doneTask {
@@ -26,7 +51,9 @@
 
 .x {
   position: absolute;
-  left: 5px;
+  left: 0px;
+  top: 50%;
+  transform: translate(-100%, -50%);
   border: 1px solid #000;
   color: #46e1b5;
   width: 20px;
@@ -36,7 +63,7 @@
 }
 
 .move {
-  right: 5px;
+  right: 0px;
   position: absolute;
   border: 1px solid #000;
   color: #46e1b5;
@@ -44,4 +71,65 @@
   height: 20px;
   border-radius: 50%;
   cursor: pointer;
+  top: 50%;
+  transform: translate(100%, -50%);
 }
+
+@media (max-width: 575.98px) {
+  .content {
+    padding: 0;
+    grid-template-columns: 100%;
+  }
+  .task {
+    font-size: 10px;
+    padding: 3px 12px;
+    color: #000;
+    display: grid;
+    line-break: anywhere;
+    text-align: center;
+  }
+  .task:not(:last-child) {
+    border-bottom: 1px solid #46e1b5;
+  }
+  .x {
+    transform: translate(0, -50%);
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .move {
+    transform: translate(0, -50%);
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* 
+@media (max-width: 575.98px) {
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+ */

@@ -4,6 +4,10 @@ import { useSelector, useDispatch } from "react-redux";
 import { setTask } from "../../Redux/action/listAction";
 
 const ToDo = () => {
+  // git add .
+  //git commit -m "gfg"
+  // git push origin master
+  // git deploy
   const data = useSelector((state) => state);
   const dispatch = useDispatch();
   const toDoList = data.filter((ele) => ele.taskstate === "todo");
